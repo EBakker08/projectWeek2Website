@@ -1,0 +1,35 @@
+body {
+    background-color: #C4D3E8;
+}
+
+header {
+    background-color: #234D6A;
+    border: 12px solid #234D6A;
+    margin: -8px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+header img {
+    height: 100px;
+    width: auto;
+}
+
+header li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+}
+
+li img {
+    height: 80px;
+    width: auto;
+}
+
+.settings-icon {
+    height: 45px;
+    width: auto;
+    margin-top: 25px;
+}
