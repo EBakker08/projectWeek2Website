@@ -208,3 +208,119 @@ footer p {
     width: 400px;
     height: 200px;
 }
+
+/* Responsive webdesign for mobile phone */
+@media (max-width: 500px) {
+    /* Header */
+    header {
+    border: 8px solid #234D6A;
+    }
+
+    header img {
+        height: 60px;
+        margin-top: 10px;
+    }
+
+    header li {
+        gap: 50px;
+    }
+
+    li img {
+        height: 60px;
+    }
+
+    .settings-icon {
+        height: 40px;
+        margin-top: 20px;
+    }
+
+    /* index.html */
+    .introduction-text {
+        border-radius: 10px;
+        width: 275px;
+        height: 200px;
+    }
+
+    .lead-in-image {
+        border-radius: 10px;
+        width: 95px;
+        height: 125px;
+        margin-left: -15px;
+    }
+
+    .additional-info {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .additional-info .lead-in-image {
+        margin-top: 30px;
+    }
+
+    .additional-text {
+        border-radius: 10px;
+        width: 250px;
+        height: 200px;
+    }
+
+    /* Footer */
+    footer p {
+        width: 80%;
+        font-size: 10px;
+    }
+
+    /* games.html */
+    .game-logo img {
+        height: 80px;
+    }
+
+    .game-lead-in-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .game-lead-in-container img {
+        border-radius: 10px;
+        width: auto;
+        height: 125px;
+    }
+
+    .game-story {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .game-story-text {
+        border-radius: 10px;
+        width: 350px;
+        height: 250px;
+    }
+
+    .additional-info-game-box {
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .additional-info-game-box .lead-in-image {
+        margin-top: 30px;
+    }
+
+    .additional-info-game {
+        gap: 10px;
+    }
+
+    .additional-text-game {
+        border-radius: 10px;
+        width: 225px;
+        height: 175px;
+    }
+
+    .reason-text {
+        border-radius: 10px;
+        width: 300px;
+        height: 150px;
+    }
+}
