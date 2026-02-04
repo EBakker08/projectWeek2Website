@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
     <title>Games</title>
+    <script src="JavaScript/script.js"></script>
 </head>
 
 <body>
@@ -28,7 +29,22 @@
                     <img src="img/controller-icon.png" alt="games-icon">
                 </a>
             </li>
-            <img class="settings-icon" src="img/settings-icon.png" alt="settings-icon"> <!-- add JS -->
+            <button id="theme-toggle">🌙</button>
+            <script>
+                const toggleBtn = document.getElementById("theme-toggle");
+                const body = document.body;
+
+                toggleBtn.addEventListener("click", () => {
+                    body.classList.toggle("dark-mode");
+
+                    // Update button text/icon
+                    if (body.classList.contains("dark-mode")) {
+                    toggleBtn.textContent = "☀️";
+                    } else {
+                    toggleBtn.textContent = "🌙";
+                    }
+                });
+            </script>
         </header>
 
         <h2>Colour Scape&trade;</h2>
