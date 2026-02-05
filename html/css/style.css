@@ -209,6 +209,57 @@ footer p {
     height: 200px;
 }
 
+/* Dark/light theme/mode */
+header button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Default mode (light) */
+body {
+    background-color: #C4D3E8;
+    color: #234D6A;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark mode */
+body.dark-mode {
+    background-color: #2E4A76;
+    color: #F1F0F0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Make specific elements darker/lighter */
+header, footer, .main-content {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode header,
+body.dark-mode footer,
+body.dark-mode .main-content {
+    background-color: #19364D;
+    border: 12px solid #19364D;
+    color: #F1F0F0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode .introduction-text,
+body.dark-mode .additional-text,
+body.dark-mode .game-story-text,
+body.dark-mode .additional-text-game,
+body.dark-mode .reason-text {
+    background-color: #90ABD4;
+    border: 8px solid #4F7ABA;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode .lead-in-image {
+    background-color: #46864E;
+    border: 8px solid #46864E;
+    transition: background-color 0.3s, color 0.3s;
+}
+
 /* Responsive webdesign for mobile phone */
 @media (max-width: 500px) {
     /* Header */
@@ -323,52 +374,4 @@ footer p {
         width: 300px;
         height: 150px;
     }
-}
-
-
-/* Dark/light theme/mode */
-header button {
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-
-/* Default mode (light) */
-body {
-    background-color: #C4D3E8;
-    color: #234D6A;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-/* Dark mode */
-body.dark-mode {
-    background-color: #2E4A76;
-    color: #F1F0F0;
-}
-
-/* Make specific elements darker/lighter */
-header, footer, .main-content {
-    transition: background-color 0.3s, color 0.3s;
-}
-
-body.dark-mode header,
-body.dark-mode footer,
-body.dark-mode .main-content {
-    background-color: #19364D;
-    border: 12px solid #19364D;
-    color: #F1F0F0;
-}
-
-body.dark-mode .introduction-text,
-body.dark-mode .additional-text,
-body.dark-mode .game-story-text,
-body.dark-mode .additional-text-game,
-body.dark-mode .reason-text {
-    background-color: #90ABD4;
-    border: 8px solid #90ABD4;
-}
-
-body.dark-mode .lead-in-image {
-    background-color: #46864E;
-    border: 8px solid #46864E;
 }
