@@ -6,6 +6,11 @@ body {
     color: #234D6A;
 }
 
+body p {
+    font-size: 18px;
+    text-align: justify;
+}
+
 /* Header */
 header {
     background-color: #234D6A;
@@ -74,11 +79,15 @@ main {
     height: 225px;
     z-index: 1;
     margin-left: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.lead-in-imgage img {
+.lead-in-image img {
     height: 95%;
     width: 95%;
+    border-radius: 15px;
 }
 
 .additional-info {
@@ -106,7 +115,7 @@ main {
     border-radius: 15px;
     text-align: left;
     width: 350px;
-    height: 300px;
+    height: 265px;
 }
 
 /* Footer */
@@ -124,6 +133,7 @@ footer p {
     width: 40%;
     height: auto;
     font-size: 12px;
+    text-align: center;
 }
 
 .footer-spacing {
@@ -192,7 +202,7 @@ footer p {
     border-radius: 15px;
     text-align: left;
     width: 300px;
-    height: 250px;
+    height: 450px;
 }
 
 .reason {
@@ -207,7 +217,7 @@ footer p {
     border-radius: 15px;
     text-align: left;
     width: 400px;
-    height: 200px;
+    height: 150px;
 }
 
 /* Dark/light theme/mode */
@@ -263,6 +273,10 @@ body.dark-mode .lead-in-image {
 
 /* Responsive webdesign for mobile phone */
 @media (max-width: 500px) {
+    body p {
+        font-size: 12px;
+    }
+
     /* Header */
     header {
     border: 8px solid #234D6A;
@@ -347,7 +361,7 @@ body.dark-mode .lead-in-image {
     .game-story-text {
         border-radius: 10px;
         width: 350px;
-        height: 250px;
+        height: 180px;
     }
 
     .additional-info-game-box {
@@ -367,12 +381,12 @@ body.dark-mode .lead-in-image {
     .additional-text-game {
         border-radius: 10px;
         width: 225px;
-        height: 175px;
+        height: 275px;
     }
 
     .reason-text {
         border-radius: 10px;
         width: 300px;
-        height: 150px;
+        height: 100px;
     }
 }
